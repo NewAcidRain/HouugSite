@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&family=Roboto+Mono:wght@300;700&display=swap');
+
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image:url("../pics/bg.png");
+}
+.bg{
+     background-image:url("../pics/alex.png");
+     background-size: 1400px;
+     background-position: 0px 0px;
+     background-repeat: no-repeat;
+     animation: animatedBackground 2s linear infinite alternate;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center
+}
+.login-box-input{
+    font-family: 'Martian Mono', monospace;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+
+}
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-top: 6px rgba(232, 197, 148, 0.87) solid ;
+    background-color: rgba(176, 217, 231, 0.6);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 14px 51px 15px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 14px 51px 15px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 14px 51px 15px rgba(34, 60, 80, 0.5);
+
+
+}
+
+.href-back-btn{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.form-input2{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 230px;
+    background-color: rgba(176, 217, 231, 0.6);
+    border-radius: 5px
+}
+.btn-login{
+    width: 150px;
+    margin-bottom: 20px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgba(176, 217, 231, 0.6);
+        -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+
+.btn-login:hover{
+     background-color: rgba(97, 197, 234, 0.6);
+
+}
+
+@keyframes animatedBackground {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 50px 50px;
+    }
+
+}
